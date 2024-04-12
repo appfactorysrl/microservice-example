@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service TimeProtocol {
+   rpc GetCurrentTime(Empty) returns (TimeInfo);
+}
+
+message TimeInfo {
+    string time = 1;
+}
+
+message Empty {}

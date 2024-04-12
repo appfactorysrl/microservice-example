@@ -1,0 +1,28 @@
+{
+  "name": "middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "local-build": "npm run build; npm run start",
+    "dev": "nodemon src/index.ts"
+  },
+  "author": "Luca Roverelli",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.6",
+    "@grpc/proto-loader": "^0.7.12",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ts-protoc-gen": "^0.15.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
